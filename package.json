@@ -1,0 +1,14 @@
+{
+  "name": "test-node-app",
+  "version": "1.0.0",
+  "description": "Testing proofs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "author": "Luis Locon <luis.locon@gmail.com> (https://twitter.com/LoconLuis)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
