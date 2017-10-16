@@ -4,7 +4,8 @@
   "description": "Testing proofs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha **/*.test.js"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "author": "Luis Locon <luis.locon@gmail.com> (https://twitter.com/LoconLuis)",
   "license": "MIT",
