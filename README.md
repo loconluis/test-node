@@ -5,6 +5,9 @@
 
 [Expect Docs](https://github.com/mjackson/expect).
 
-#### useful info
+[Supertest Docs](https://github.com/visionmedia/supertest).
+
+
+#### Useful info
 
 [Chai Docs](http://chaijs.com/).
