@@ -1,39 +1,42 @@
-
 const expect = require('expect')
 
 const util = require('./utils')
 
-// Test for add function
-it('Should add two numbers', () => {
-  const res = util.add(33, 11)
+describe('Utils', () => {
+  // Test for add function
+  it('Should add two numbers', () => {
+    const res = util.add(33, 11)
 
-  expect(res).toBe(44).toBeA('number')
-  // if (res !== 44) {
-  //   throw new Error(`Expected 44, but got ${res}`)
-  // }
-})
-// Test for add function (but async way)
-it('should async add two numbers', (done) => {
-  util.asyncAdd(4, 3, (sum) => {
-    expect(sum).toBe(7).toBeA('number')
-    done() // use done to tell mocha this is a Async function
+    expect(res).toBe(44).toBeA('number')
+    // if (res !== 44) {
+    //   throw new Error(`Expected 44, but got ${res}`)
+    // }
   })
-})
 
-// Test for square function
-it('Should square the number', () => {
-  const res = util.square(2)
+  // Test for add function (but async way)
+  it('should async add two numbers', (done) => {
+    util.asyncAdd(4, 3, (sum) => {
+      expect(sum).toBe(7).toBeA('number')
+      done() // use done to tell mocha this is a Async function
+    })
+  })
 
-  expect(res).toBe(4).toBeA('number')
-  // if(res !== 4) {
-  //   throw new Error(`Expected 4, but got ${res}`)
-  // }
-})
-// Test for square function (but async way)
-it('Should async square the number', (done) => {
-  util.asyncSquare(3, (sqr) => {
-    expect(sqr).toBe(9).toBeA('number')
-    done()
+  // Test for square function
+  it('Should square the number', () => {
+    const res = util.square(2)
+
+    expect(res).toBe(4).toBeA('number')
+    // if(res !== 4) {
+    //   throw new Error(`Expected 4, but got ${res}`)
+    // }
+  })
+
+  // Test for square function (but async way)
+  it('Should async square the number', (done) => {
+    util.asyncSquare(3, (sqr) => {
+      expect(sqr).toBe(9).toBeA('number')
+      done()
+    })
   })
 })
 
